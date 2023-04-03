@@ -17,5 +17,17 @@ public class Directoremploye implements Employes {
 		
 		return "Report created by director. "+newreport.getinforme();
 	}
+	
+	//init method. Run tasks before the bean is available
+	
+	public void initial_method() {
+		System.out.println("Here will be the tasks to execute before the bean is ready");
+	}
+	
+	//destroy method. Run tasks after the bean has been executed
+	
+	public void final_method() {
+		System.out.println("Here will be the tasks to execute after the bean is used");
+	}
 
 }
